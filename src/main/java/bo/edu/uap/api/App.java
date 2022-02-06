@@ -19,6 +19,6 @@ public class App
         }
         System.out.println( "******************Iniciando el servidor******************" );
         System.out.println(properties.getProperty("ambiente"));
-        get("/entornos",(req,res)->"En el ambiente <ambiente>");
+        get("/entornos",(req,res)->"En el ambiente " + properties.getProperty("ambiente") );
     }
 }
