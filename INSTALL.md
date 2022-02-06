@@ -6,10 +6,15 @@
 > Para la publicación del API REST utilizar la librería Spark (https://sparkjava.com/).
 
 > Publicar la ruta GET http://localhost:3456/entornos que retorne la siguiente cadena de caracteres: "En el ambiente <ambiente>", donde el valor de <ambiente> debe venir a partir de una variable de configuración de acuerdo al perfil. (Utilizar resources desde donde se obtendrá los valores de <ambiente>)
+
 > Definir en el archivo pom.xml dos perfiles que servirán para los entornos de pruebas y producción, en ambos perfiles definir la variable "ambiente". (Utilizar la sección de perfiles en el pom.xml)
+
 > Realizar la construcción de la aplicación en un solo archivo jar con todas las dependencias. (Utilizar el plugin maven-assembly-plugin)
+
 > Escribir un archivo INSTALL.md dentro del proyecto con las instrucciones para la construcción de la aplicación utilizando los comandos maven. (Utilizar el parámetro -P en los comandos de maven para cambiar de perfiles)
+
 > En el archivo INSTALL.md debe tener también las instrucciones para correr la aplicación con el archivo jar. (Por ejemplo en una consola correr el jar y en otra utilizar curl para consumir el API REST)
+
 > Realizar la automatización de la construcción de la aplicación utilizando github actions de github.
 
 Se realizará la evaluación de la aplicación considerando lo siguiente:
