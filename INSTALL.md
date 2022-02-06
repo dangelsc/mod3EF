@@ -12,8 +12,23 @@
 > Realizar la construcción de la aplicación en un solo archivo jar con todas las dependencias. (Utilizar el plugin maven-assembly-plugin)
 
 > Escribir un archivo INSTALL.md dentro del proyecto con las instrucciones para la construcción de la aplicación utilizando los comandos maven. (Utilizar el parámetro -P en los comandos de maven para cambiar de perfiles)
+```
+    mvn package -P prod
+    java -jar target/exfinal-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+```
+
 
 > En el archivo INSTALL.md debe tener también las instrucciones para correr la aplicación con el archivo jar. (Por ejemplo en una consola correr el jar y en otra utilizar curl para consumir el API REST)
+
+```
+    java -jar target/exfinal-1.0-SNAPSHOT-jar-with-dependencies.jar
+```
+o
+```
+    curl http://localhost:4567/entornos
+
+```
 
 > Realizar la automatización de la construcción de la aplicación utilizando github actions de github.
 
